@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Anthony Heggin - Contact</title>
+<meta charset="UTF-8">
+<meta name="author" content="Anthony Heggin">
+<meta name="description" content="My contact information to various social media outlets and also an optional form to be filled out!">
+<meta name="robots" content="nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Merriweather%7CRoboto&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<nav id="nav-bar">
+  <ul>
+    <li><a href="index.htm">Home</a></li>
+    <li><a href="about.htm">About</a></li>
+    <li><a href="projects.htm">Projects</a></li>
+    <li><a href="resume.htm">Resume</a></li>
+    <li><a href="contact.htm">Contact</a></li>
+  </ul>
+</nav>
+<div class="light-sect" id="top-sect">
+  <header><h1>Contact</h1></header>
+  <p>Feel free to contact me at any of these links below!</p>
+  <div class="a2a_kit a2a_kit_size_32 a2a_default_style a2a_follow" id="social-media-buttons">
+    <a class="a2a_button_twitter" title="Twitter" data-a2a-follow="AHeggin"></a>
+    <a class="a2a_button_linkedin" title="Linkedin" data-a2a-follow="anthony-heggin"></a>
+    <a class="a2a_button_facebook" title="Facebook" data-a2a-follow="anthony.heggin"></a>
+    <a class="a2a_button_github" title="Github" data-a2a-follow="Zensynthium"></a>
+  </div>
+  <p>Better yet, please fill out this User Experience Survey and leave any comments you have about business inquiries, desired future collaboration on any projects, or just to leave a friendly comment!</p>
+  <div id="button-container">
+  <button class="buttons" id="take-survey-button" onclick="showSurvey()">Take Survey</button>
+  </div><br>
+  <form id="survey-form" class="survey-form" action="survey.php" method="post">
+    <header><h2>User Experience Survey</h2></header>
+  <input type="hidden" id="recipient" name="recipient" value="Anthony_m_h@outlook.com">
+  <input type="hidden" id="redirect" name="redirect" value="confirmation-page.htm">
+  <input type="hidden" id="subject" name="subject" value="Feedback Survey from Portfolio Page">
+  <label for="name">Name: <input id="name" type="text" name="name" placeholder="Albert Einstein" required></label><br>
+  <label for="email">Email: <input id="email" type="email" name="email" placeholder="Relativity@Physics.com" required></label><br><br>
+  On a scale from 1 to 5, what would you rate my website?<br>
+  <label for="1"><input id="1" class="radio" type="radio" name="outof5" value="1">1 </label>
+  <label for="2"><input id="2" class="radio" type="radio" name="outof5" value="2">2</label>
+  <label for="3"><input id="3" class="radio" type="radio" name="outof5" value="3">3</label>
+  <label for="4"><input id="4" class="radio" type="radio" name="outof5" value="4">4 </label>
+  <label for="5"><input id="5" class="radio" type="radio" name="outof5" value="5">5</label><br><br>
+  What do you like and/or dislike about my page?
+  <textarea rows="5" cols="70" placeholder=" I really liked that you included placeholder text in this textarea!"></textarea><br><br>
+  
+  Have any other business inquiries, or other comments you would like to leave? Here's the place!
+  <textarea rows="5" cols="70" placeholder="Place any other comments here! Thank you!"></textarea><br>
+  <input id="submit" type="submit" class="buttons" value="Submit">
+  </form>
+  <figure id="confirmation">
+  <img id="confirmation-image" title="Thank you!" src="images/thank-you.jpeg" alt="Thank you!">
+  <figcaption>Your feedback is much appreciated! I'll get back to you as soon as I can and I hope to hear more from you soon!</figcaption>
+  </figure>
+</div>
+<footer class="light-sect">
+  &copy; Created by Anthony Heggin. All rights reserved.
+</footer>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
